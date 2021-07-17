@@ -16,8 +16,8 @@
         <body>
             <div>
                 <form action="/url-where-you-want-to-submit-form-data" id='survey-form'>
-                    Name <input type=string required><br>
-                    Email <input type=string required><br>
+                    Name <input type=string required id='name' name='name'><br>
+                    Email <input required type='email' id='email' name='email' pattern='[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,}$'><br>
                     Company <input type=string><br>
                     Age <input type="number"><br>
                     Which Option Best Describes You? 
