@@ -18,16 +18,16 @@
                 <form action="/url-where-you-want-to-submit-form-data" id='survey-form'>
                     <label for='name'></label>Name <input type=string required id='name' name='name' placeholder='First and Last Initial'></label><br>
                     <label for='email'>Email <input required type='email' id='email' name='email' pattern='[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,}$' placeholder='Best email for follow up'></label><br>
-                    Company <input type=string><br>
+                    <label for='company'>Company <input type=string></label><br>
                     <label for='age'>Age <input id='number' type="number" min='18' max='99' placeholder='18-99'></label><br>
                     Which Option Best Describes You? 
-                    <select name='dropdown'>
+                    <select id='dropdown' name='dropdown'>
                         <option value='Employer'>Employer</option>
                         <option value='Potential Co-Worker'>Potential Co-Worker</option>
                         <option value='Secret Admirer'>Secret Admirer</option>
                     </select><br>
                     How do you feel so far about Aaron as a candidate? 
-                    <label for='Amazing'>
+                    <label for='How-do-you-feel'>
                         <input id='amazing' type='radio' name='candidate'>Amazing!
                         <input id='pretty good' type='radio' name='candidate'>Pretty good!
                         <input id='hired' type='radio' name='candidate'>He's hired!
@@ -35,14 +35,14 @@
                     What is your favorite thing about Aaron?
                     <select name='favorite'>
                         <option value='honesty'>His honesty</option>
-                        <option vlaue='integrity'>His integrity</option>
+                        <option value='integrity'>His integrity</option>
                         <option value='creativity'>His creativity</option>
                     </select><br>
                     What would you like to see him improve on?
-                    <label for='Education'><input id='education' type='checkbox' name='improve'> A CS Degree</label>
-                    <label for='Portfolio'><input id='portfolio' type='checkbox' name='improve'> A better portfolio</label>
-                    <label for='Projects'><input id='projects' type='checkbox' name='improve'> More complex projects</label>   
-                    <label for='Interview'><input id='interview' type='checkbox' name='improve'> A better interview</label>
+                    <label for='Education'><input id='education' value='cs degree' type='checkbox' name='improve'> A CS Degree</label>
+                    <label for='Portfolio'><input id='portfolio' value='portfolio' type='checkbox' name='improve'> A better portfolio</label>
+                    <label for='Projects'><input id='projects' value='projects' type='checkbox' name='improve'> More complex projects</label>   
+                    <label for='Interview'><input id='interview' value='interview' type='checkbox' name='improve'> A better interview</label>
                     <label for='Code'><input id='code' type='checkbox' name='improve'> Better code</label><br>
                     Any comments or suggestions?<br>
                     <label for='suggestions'>List your suggestions for Aaron here:</label><br>
