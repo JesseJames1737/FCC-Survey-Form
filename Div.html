@@ -3,18 +3,30 @@
 <style>
 
 #box-container {
-    background-color: purple;
+    background-color: rgb(105, 0, 105, .3);
     height: 500px;
     width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 #black-box {
     background-color: black; 
     height: 50%;
     width: 50%;
+    opacity: 1; 
+}
+
+#background-img {
+    height: 500px;
+    width: 500px;
+    margin: 0;
+    background-image: url(https://mcdn.wallpapersafari.com/medium/78/98/UmSqOw.jpg);
+    display: flex;
+    position: absolute;
+    opacity: .3;
 }
 
 /*#white-box {
@@ -27,5 +39,6 @@
 
 <div id='box-container'>
     <div id='black-box'></div>
+    <div id='background-img'></div>
     <div id='white-box'></div>
 </div>
