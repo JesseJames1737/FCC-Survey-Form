@@ -3,24 +3,34 @@
 <style>
 
 #box-container {
-    background-color: rgb(105, 0, 105);
+    background-color: rgb(105, 0, 105, .3);
     height: 500px;
     width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(https://mcdn.wallpapersafari.com/medium/78/98/UmSqOw.jpg);
+    z-index: -1;
 }
 
 #black-box {
     background-color: black; 
     height: 50%;
     width: 50%;
+    z-index: 1;
+}
+
+#background-img {
+    background-image: url(https://mcdn.wallpapersafari.com/medium/78/98/UmSqOw.jpg);
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    opacity: .3;
 }
 
 </style>
 
 <div id='box-container'>
     <div id='black-box'></div>
+    <div id='background-img'></div>
 </div>
