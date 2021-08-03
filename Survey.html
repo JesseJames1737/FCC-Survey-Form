@@ -1,50 +1,49 @@
-<!DOCTYPE html>
+<DOCTYPE! html>
 
 <style>
-    .title {
-        
-    }
 
-    html, body, main {
+    #box-container {
+        background-color: rgb(160, 67, 160);
         height: 100%;
-        margin: 0px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+        margin: 0;
     }
 
-    .background-color {
-        background-color: rgba(127, 140, 255, .3);
-        height: 100%; 
-    }
-
-    .background-img {
-        background-image: url(https://www.techrepublic.com/a/hub/i/r/2015/02/03/ae3b8050-af60-440b-a397-ac6061d06166/resize/770x/d88a5e21c251cf863d59417739ef7f37/officeworkersistock000044385306small.jpg);
+    #background-img {
+        background-image: url(https://mcdn.wallpapersafari.com/medium/78/98/UmSqOw.jpg);
         height: 100%;
+        width: 100%; 
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        filter: opacity(30%);
-        filter: blur(2px);
+        position: absolute;
+        opacity: .5;
     }
 
-    .survey-form {
-        
+    #form-container {
+        background-color:rgb(187, 187, 187, .8);
+        height: 75%;
+        width: 50%;
+        z-index: 1;
     }
 
 </style>
 
-<html>
-
    
 
-    <main>
-        <body>
-            <div id='background-img' class='background-img'>
-            <div id='background-color' class='background-color'>
-                  <div id='form-container'> 
-                    <head>
-                        <title>Survey Form</title>
-                        <h1 id='title' class='title'>How is Aaron as a candidate?</h1>
-                        <p id='description'>Thank you for taking the time to help Aaron land a job in tech!</p>
-                    </head>
-                      <form action="/url-where-you-want-to-submit-form-data" id='survey-form' class="survey-form">
+    <div id='box-container'>
+        <div id='form-container'> 
+                
+            <!--<head>
+            <title>Survey Form</title>
+            <h1 id='title' class='title'>How is Aaron as a candidate?</h1>
+            <p id='description'>Thank you for taking the time to help Aaron land a job in tech!</p>
+            </head> -->
+            <form action="/url-where-you-want-to-submit-form-data" id='survey-form' class="survey-form">
                         <label for='name'></label>Name <input type=string required id='name' name='name' placeholder='First and Last Initial'></label><br>
                         <label for='email'>Email <input required type='email' id='email' name='email' pattern='[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,}$' placeholder='Best email for follow up'></label><br>
                         <label for='company'>Company <input type=string></label><br>
@@ -77,11 +76,7 @@
                         <label for='suggestions'>List your suggestions for Aaron here:</label><br>
                         <textarea id='suggestions' name='suggestions' rows='4' cols='50'>Don't hold back, help Aaron land a job!</textarea><br><br>
                         <input type='submit' value='submit'>
-                        </form>
-                    </div>
-            </div>
-            </div>
-        </body>
-    </main>   
-    
-</html>
+            </form>
+        </div>
+        <div id='background-img'></div> 
+    </div> 
